@@ -36,14 +36,15 @@ describe('Testing the Triangle Functions', function() {
         done();
     });
     
-    it('3. The area for a Triangle rectangle ', function(done) {
+    it('3. The area round for a Triangle rectangle on AB ', function(done) {
         let t3 = new Triangle(6.1, 18, 19);
-        expect(t3.getArea()).to.equal(57.95);
+        expect(t3.getTriangleRectangle()).to.equal("Rectangle");
+        expect(t3.getArea()).to.equal(58);
         done();
     });
     it('4. The Triangle is equilateral', function(done) {
         let t4 = new Triangle(5, 5, 5);
-        expect(t4.getEquilateral()).to.equal(5);
+        expect(t4.getEquilateral()).to.equal("Equilateral");
         done();
     });
     
